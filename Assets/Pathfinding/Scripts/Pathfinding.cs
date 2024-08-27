@@ -160,14 +160,24 @@ public class Pathfinding {
     }
 
     private int CalculateNeighborCost(PathNode a, PathNode b) {
+        if (a.x == b.x || a.y == b.y)
+        {
+            return MOVE_STRAIGHT_COST;
+        }
+        return MOVE_DIAGONAL_COST;
+
         //TODO: Calculate the cost for this move compared to the parent node
-        return 0;
+        //return 0;
     }
 
     private int CalculateHeuristicCost(PathNode a, PathNode b)
     {
+        int xDistance = Mathf.Abs(a.x - b.x);
+        int yDistance = Mathf.Abs(a.y - b.y);
+        return Mathf.FloorToInt(MOVE_STRAIGHT_COST * Mathf.Sqrt(Mathf.Pow(xDistance, 2) + Mathf.Pow(yDistance, 2)));
+
         //TODO: calculate an heuristic (H value) for the A* algorithm
-        return 0;
+        //return 0;
     }
 
     private PathNode GetLowestFCostNode(List<PathNode> pathNodeList) {
