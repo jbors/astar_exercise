@@ -72,7 +72,7 @@ public class Pathfinding {
         }
 
         startNode.gCost = 0;
-        startNode.hCost = CalculateNeighborCost(startNode, endNode);
+        startNode.hCost = CalculateHeuristicCost(startNode, endNode);
         startNode.CalculateFCost();
         
         PathfindingDebugStepVisual.Instance.ClearSnapshots();
