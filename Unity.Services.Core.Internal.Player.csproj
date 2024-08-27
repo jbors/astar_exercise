@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{454644E8-F903-D72B-A530-18D57ADF5A46}</ProjectGuid>
+    <ProjectGuid>{55C27682-0F74-1372-6C28-201E42026437}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Services.Core.Internal</AssemblyName>
@@ -116,8 +116,8 @@
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Runtime/Core.Internal/Registry/HashExceptions.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Runtime/Core.Internal/Logging/CoreLogger.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Runtime/Core.Internal/Components/Telemetry/IMetricsFactory.cs" />
-    <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Runtime/Core.Internal/Registry/CircularDependencyException.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Runtime/Core.Internal/Components/Environments/IEnvironments.cs" />
+    <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Runtime/Core.Internal/Registry/CircularDependencyException.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Runtime/Core.Internal/Components/Scheduler/IActionScheduler.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -697,11 +697,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Services.Core.Player.csproj">
-      <Project>{0357AFF7-19F2-E989-4B06-9A2D5F9A3C7B}</Project>
+      <Project>{6CFCB4B8-B433-8142-768B-97C00EDC9C3C}</Project>
       <Name>Unity.Services.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{2368AD6A-3F83-43B7-2985-1CB6CB4C6892}</Project>
+      <Project>{A9CEDBAB-1183-FD91-D19D-1D69C5AD09C8}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

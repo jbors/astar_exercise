@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2368AD6A-3F83-43B7-2985-1CB6CB4C6892}</ProjectGuid>
+    <ProjectGuid>{A9CEDBAB-1183-FD91-D19D-1D69C5AD09C8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEngine.UI</AssemblyName>
@@ -75,8 +75,8 @@
     <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" />
     <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs" />
     <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SetPropertyUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs" />
     <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs" />
     <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs" />
     <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" />
     <Compile Include="Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs" />

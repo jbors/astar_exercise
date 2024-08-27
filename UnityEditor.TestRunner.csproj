@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DA9BD7FE-8B60-5268-F501-4AF5C901D020}</ProjectGuid>
+    <ProjectGuid>{08CB43EE-9D4F-1CA0-937F-0E1593D9C6CA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEditor.TestRunner</AssemblyName>
@@ -62,8 +62,8 @@
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestRunner/Messages/EnterPlayMode.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestRun/Tasks/PrebuildSetupTask.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestRunner/EditModeRunner.cs" />
-    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/RemoteTestResultReciever.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/Api/Analytics/AnalyticsTestCallback.cs" />
+    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/RemoteTestResultReciever.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/RuntimeTestLauncherBase.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestRunner/Callbacks/WindowResultUpdaterDataHolder.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/UnityTestProtocol/Message.cs" />
@@ -81,8 +81,8 @@
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/AttributeFinderBase.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestRun/Tasks/TestTaskBase.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/GUI/TestListTreeView/Icons.cs" />
-    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/AndroidPlatformSetup.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/UnityTestProtocol/UnityTestProtocolListener.cs" />
+    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/AndroidPlatformSetup.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/Api/ITestAdaptor.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/Api/ITestRunSettings.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/CommandLineTest/ISettingsBuilder.cs" />
@@ -215,8 +215,8 @@
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/UnityTestProtocol/IUtpMessageReporter.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestRunner/Utils/TestListCacheData.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/CommandLineTest/RunSettings.cs" />
-    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/GUI/TestListTreeView/TestListTreeViewDataSource.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/TestLauncherBase.cs" />
+    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/GUI/TestListTreeView/TestListTreeViewDataSource.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/Api/TestRunnerApi.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/UnityTestProtocol/IUtpLogger.cs" />
   </ItemGroup>
@@ -857,7 +857,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{D2558181-A83C-03F5-8A8A-2F4B74529144}</Project>
+      <Project>{D9F13FEE-4868-F7F5-FB47-13EEAA7D9244}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

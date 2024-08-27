@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{43B95CC3-CEF6-C7DA-B4E1-513FDE31F4E4}</ProjectGuid>
+    <ProjectGuid>{0F14DB08-178C-6129-6625-FECEC4BD14B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Services.Core.Editor</AssemblyName>
@@ -67,8 +67,8 @@
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/UiHelpers/VisualElementHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/BackendHelpers/JsonHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/ProjectStateManagement/IProjectStateHelper.cs" />
-    <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/UiHelpers/SettingsCommonHeaderUiHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/UserRoleManagement/UserRole.cs" />
+    <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/UiHelpers/SettingsCommonHeaderUiHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/UiHelpers/SliderToggleUiHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/EditorGameService/EditorGameServiceSettingsProvider.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.4.2/Editor/Core/EditorGameService/IEditorGameServiceIdentifier.cs" />
@@ -399,8 +399,8 @@
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
@@ -417,8 +417,8 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -801,39 +801,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Services.Core.csproj">
-      <Project>{5655F591-F493-2E5F-C1B4-35ED3F48B90F}</Project>
+      <Project>{682DECE6-CEE0-E9A6-6B22-863A0F6126DA}</Project>
       <Name>Unity.Services.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Networking.csproj">
-      <Project>{8A433760-2056-7F0A-4D69-6F0C28B6DF8B}</Project>
+      <Project>{12319E04-B2F3-8E68-4509-B0B39FB64519}</Project>
       <Name>Unity.Services.Core.Networking</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Internal.csproj">
-      <Project>{F75FFA1B-7399-901F-A260-33C4AACD41EE}</Project>
+      <Project>{45970DEB-B5C8-0C5D-C601-211ECB1F40AD}</Project>
       <Name>Unity.Services.Core.Internal</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Configuration.Editor.csproj">
-      <Project>{ED4DE7AF-3566-BF1F-955D-DE5F54206F4A}</Project>
+      <Project>{4BF81400-4043-07CB-1A71-1C51F8F4C7BE}</Project>
       <Name>Unity.Services.Core.Configuration.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Telemetry.csproj">
-      <Project>{BB34A130-B54B-A546-AA75-443E81077286}</Project>
+      <Project>{D190D8CF-0ACD-7AB6-385F-1B71D95681A9}</Project>
       <Name>Unity.Services.Core.Telemetry</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{53A8B7AA-ED00-4291-1D68-0BD208E35752}</Project>
+      <Project>{6818BE5D-A159-B925-538E-7E368AACFA88}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5C108391-DE5D-6B99-C706-7867F97AB983}</Project>
+      <Project>{F7794D2C-EA18-9792-2B1E-EE9186D0C994}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{D2558181-A83C-03F5-8A8A-2F4B74529144}</Project>
+      <Project>{D9F13FEE-4868-F7F5-FB47-13EEAA7D9244}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{DA9BD7FE-8B60-5268-F501-4AF5C901D020}</Project>
+      <Project>{08CB43EE-9D4F-1CA0-937F-0E1593D9C6CA}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

@@ -72,7 +72,7 @@ public class Pathfinding {
         }
 
         startNode.gCost = 0;
-        startNode.hCost = CalculateDistanceCost(startNode, endNode);
+        startNode.hCost = CalculateNeighborCost(startNode, endNode);
         startNode.CalculateFCost();
         
         PathfindingDebugStepVisual.Instance.ClearSnapshots();
@@ -97,11 +97,11 @@ public class Pathfinding {
                     continue;
                 }
 
-                int tentativeGCost = currentNode.gCost + CalculateDistanceCost(currentNode, neighbourNode);
+                int tentativeGCost = currentNode.gCost + CalculateNeighborCost(currentNode, neighbourNode);
                 if (tentativeGCost < neighbourNode.gCost) {
                     neighbourNode.cameFromNode = currentNode;
                     neighbourNode.gCost = tentativeGCost;
-                    neighbourNode.hCost = CalculateDistanceCost(neighbourNode, endNode);
+                    neighbourNode.hCost = CalculateHeuristicCost(neighbourNode, endNode);
                     neighbourNode.CalculateFCost();
 
                     if (!openList.Contains(neighbourNode)) {
@@ -159,11 +159,17 @@ public class Pathfinding {
         return path;
     }
 
-    private int CalculateDistanceCost(PathNode a, PathNode b) {
+    private int CalculateNeighborCost(PathNode a, PathNode b) {
         int xDistance = Mathf.Abs(a.x - b.x);
         int yDistance = Mathf.Abs(a.y - b.y);
         int remaining = Mathf.Abs(xDistance - yDistance);
         return MOVE_DIAGONAL_COST * Mathf.Min(xDistance, yDistance) + MOVE_STRAIGHT_COST * remaining;
+    }
+
+    private int CalculateHeuristicCost(PathNode a, PathNode b)
+    {
+        //TODO: calculate an heuristic (H value) for the A* algorithm
+        return 0;
     }
 
     private PathNode GetLowestFCostNode(List<PathNode> pathNodeList) {

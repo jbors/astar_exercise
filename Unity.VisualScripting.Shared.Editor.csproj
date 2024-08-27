@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{16A01D6B-0928-8FC0-F409-ADD5FDA28375}</ProjectGuid>
+    <ProjectGuid>{53E62E79-B882-DF7A-9C4F-ECA7CD8000C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.VisualScripting.Shared.Editor</AssemblyName>
@@ -323,8 +323,8 @@
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
@@ -341,8 +341,8 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -725,43 +725,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{D268770E-290C-E708-CF2E-536BEFB554BB}</Project>
+      <Project>{E49A3CF8-CE97-DD7E-7707-E2418E1AC6E4}</Project>
       <Name>Unity.VisualScripting.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{B92EA491-A266-0908-96BB-54E4F963608E}</Project>
+      <Project>{CC02F900-4583-3525-F7AF-C07BAB2946B3}</Project>
       <Name>Unity.VisualScripting.Flow.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{4BCF13CC-07E4-B2A8-041F-E568687780E3}</Project>
+      <Project>{2A8BB1DB-4EF2-9AD6-3974-6BE15E561F29}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{87D6FAEB-3B46-0936-8734-A515D0A6AFB5}</Project>
+      <Project>{2CE1DE96-BFE1-5CE2-4044-800D78C54386}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{9B43D9D3-7064-57A1-41BA-1B7AA332FFE0}</Project>
+      <Project>{898C3EF6-C524-46E4-AA0F-ABE88070C73B}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{883E3B06-0441-6A1F-04C1-67D3A14673BE}</Project>
+      <Project>{E4936962-128B-A947-D71B-49F9217F1C04}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{53A8B7AA-ED00-4291-1D68-0BD208E35752}</Project>
+      <Project>{6818BE5D-A159-B925-538E-7E368AACFA88}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5C108391-DE5D-6B99-C706-7867F97AB983}</Project>
+      <Project>{F7794D2C-EA18-9792-2B1E-EE9186D0C994}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{D2558181-A83C-03F5-8A8A-2F4B74529144}</Project>
+      <Project>{D9F13FEE-4868-F7F5-FB47-13EEAA7D9244}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{DA9BD7FE-8B60-5268-F501-4AF5C901D020}</Project>
+      <Project>{08CB43EE-9D4F-1CA0-937F-0E1593D9C6CA}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
