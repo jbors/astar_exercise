@@ -72,7 +72,7 @@ public class Pathfinding {
         }
 
         startNode.gCost = 0;
-        startNode.hCost = CalculateNeighborCost(startNode, endNode);
+        startNode.hCost = CalculateHeuristicCost(startNode, endNode);
         startNode.CalculateFCost();
         
         PathfindingDebugStepVisual.Instance.ClearSnapshots();
@@ -174,7 +174,7 @@ public class Pathfinding {
     {
         int xDistance = Mathf.Abs(a.x - b.x);
         int yDistance = Mathf.Abs(a.y - b.y);
-        return Mathf.FloorToInt(MOVE_STRAIGHT_COST * Mathf.Sqrt(Mathf.Pow(xDistance, 2) + Mathf.Pow(yDistance, 2)));
+        return Mathf.FloorToInt(MOVE_STRAIGHT_COST * (Mathf.Sqrt(Mathf.Pow(xDistance, 2) + Mathf.Pow(yDistance, 2))));
 
         //TODO: calculate an heuristic (H value) for the A* algorithm
         //return 0;
