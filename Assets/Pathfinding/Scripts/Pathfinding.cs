@@ -16,6 +16,8 @@ using UnityEngine;
 
 public class Pathfinding {
 
+    public int ChooseHeuristic;
+
     private const int MOVE_STRAIGHT_COST = 10;
     private const int MOVE_DIAGONAL_COST = 14;
 
@@ -34,11 +36,11 @@ public class Pathfinding {
         return grid;
     }
 
-    public List<Vector3> FindPath(Vector3 startWorldPosition, Vector3 endWorldPosition) {
+    public List<Vector3> FindPath(Vector3 startWorldPosition, Vector3 endWorldPosition, HeuristicType type) {
         grid.GetXY(startWorldPosition, out int startX, out int startY);
         grid.GetXY(endWorldPosition, out int endX, out int endY);
 
-        List<PathNode> path = FindPath(startX, startY, endX, endY);
+        List<PathNode> path = FindPath(startX, startY, endX, endY, type);
         if (path == null) {
             return null;
         } else {
@@ -50,7 +52,7 @@ public class Pathfinding {
         }
     }
 
-    public List<PathNode> FindPath(int startX, int startY, int endX, int endY) {
+    public List<PathNode> FindPath(int startX, int startY, int endX, int endY, HeuristicType type) {
         PathNode startNode = grid.GetGridObject(startX, startY);
         PathNode endNode = grid.GetGridObject(endX, endY);
 
